@@ -5,12 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currículo - Dhyogo Vandresen</title>
   <style>
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,14 +15,8 @@
       padding: 20px;
     }
 
-    a {
-      color: #1e90ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: #1e90ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .container {
       max-width: 900px;
@@ -39,95 +28,55 @@
     }
 
     header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
       margin-bottom: 2rem;
     }
 
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
-      color: #ffffff;
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #1e90ff;
     }
 
-    header p {
-      font-size: 1rem;
-      color: #bbbbbb;
-      margin-bottom: 0.3rem;
-    }
+    header div h1 { font-size: 2.2rem; margin-bottom: 0.5rem; color: #ffffff; }
+    header div p { font-size: 1rem; color: #bbbbbb; margin-bottom: 0.3rem; }
 
-    section {
-      margin-bottom: 2rem;
-    }
-
+    section { margin-bottom: 2rem; }
     section h2 {
-      font-size: 1.5rem;
-      color: #1e90ff;
+      font-size: 1.5rem; color: #1e90ff;
       margin-bottom: 1rem;
       border-bottom: 2px solid #1e90ff;
-      display: inline-block;
-      padding-bottom: 4px;
+      display: inline-block; padding-bottom: 4px;
     }
 
-    h3 {
-      font-size: 1.2rem;
-      color: #ffffff;
-      margin-bottom: 0.2rem;
-    }
+    h3 { font-size: 1.2rem; color: #ffffff; margin-bottom: 0.2rem; }
+    h4 { font-size: 1rem; color: #bbbbbb; margin-bottom: 0.5rem; font-weight: normal; }
 
-    h4 {
-      font-size: 1rem;
-      color: #bbbbbb;
-      margin-bottom: 0.5rem;
-      font-weight: normal;
-    }
+    p, li { font-size: 1rem; margin-bottom: 0.5rem; }
+    ul { margin-top: 0.5rem; margin-left: 1.5rem; }
+    hr { border: 0; border-top: 1px solid #333; margin: 1.5rem 0; }
 
-    p, li {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    ul {
-      margin-top: 0.5rem;
-      margin-left: 1.5rem;
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid #333;
-      margin: 1.5rem 0;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777777;
-      margin-top: 2rem;
-    }
-
-    /* Skills boxes */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 0.5rem;
-    }
-
-    .skills span {
-      background-color: #2a2a2a;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 0.9rem;
-    }
+    footer { text-align: center; font-size: 0.9rem; color: #777777; margin-top: 2rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 0.5rem; }
+    .skills span { background-color: #2a2a2a; padding: 6px 12px; border-radius: 6px; font-size: 0.9rem; }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>DHYOGO VANDRESEN</h1>
-      <p>Guabiruba – SC, Brasil</p>
-      <p>📞 +55 (47) 99120-5205 | ✉️ <a href="mailto:dhyogo.vandresen@gmail.com">dhyogo.vandresen@gmail.com</a></p>
-      <p>Portfólio: <a href="https://www.artstation.com/dhyogo_vandresen" target="_blank">ArtStation</a> | <a href="https://sketchfab.com/DhyogoVandresen" target="_blank">Sketchfab</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/dhyogovandresen-03b549167/" target="_blank">linkedin.com/in/dhyogovandresen-03b549167</a></p>
+      <img src="foto-dhyogo.png" alt="Foto de Dhyogo Vandresen">
+      <div>
+        <h1>DHYOGO VANDRESEN</h1>
+        <p>Guabiruba – SC, Brasil</p>
+        <p>📞 +55 (47) 99120-5205 | ✉️ <a href="mailto:dhyogo.vandresen@gmail.com">dhyogo.vandresen@gmail.com</a></p>
+        <p>Portfólio: <a href="https://www.artstation.com/dhyogo_vandresen" target="_blank">ArtStation</a> | <a href="https://sketchfab.com/DhyogoVandresen" target="_blank">Sketchfab</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/dhyogovandresen-03b549167/" target="_blank">linkedin.com/in/dhyogovandresen-03b549167</a></p>
+      </div>
     </header>
 
     <section>
@@ -220,6 +169,7 @@
         <li>Vendas, lançamento de pedidos e atendimento a clientes de todo o Brasil.</li>
         <li>Suporte a representantes comerciais de Santa Catarina.</li>
       </ul>
+
     </section>
 
     <section>
